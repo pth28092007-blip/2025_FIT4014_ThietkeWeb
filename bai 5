@@ -1,0 +1,90 @@
+<thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Position</th><th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Fatima Beatriz</td><td>FatimaBeatriz@gmail.com</td><td>0985674321</td><td>Staff</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td><td>Gabriel Hanna</td><td>GabrielHanna@gmail.com</td><td>0353674231</td><td>Staff</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td><td>Charles Diya</td><td>CharlesDiya@gmail.com</td><td>0347658833</td><td>Staff</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td><td>Frank Lamdo</td><td>FrankLamdo@gmail.com</td><td>0975444768</td><td>Manager</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td><td>Louis Tom</td><td>LouisTom@gmail.com</td><td>0789568223</td><td>Staff</td>
+          <td>
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Form thêm nhân viên -->
+  <div class="modal" id="employeeModal">
+    <div class="modal-content">
+      <h3>New Employee</h3>
+      <form>
+        <label>Name:</label>
+        <input type="text" required>
+        
+        <label>Email:</label>
+        <input type="email" required>
+        
+        <label>Phone:</label>
+        <input type="text" required>
+        
+        <label>Position:</label>
+        <select>
+          <option>-- Select Position --</option>
+          <option>Staff</option>
+          <option>Manager</option>
+          <option>CEO</option>
+        </select>
+        
+        <label>Sex:</label>
+        <input type="radio" name="sex"> Male
+        <input type="radio" name="sex"> Female
+
+        <div class="actions">
+          <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn-save">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("employeeModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("employeeModal").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
